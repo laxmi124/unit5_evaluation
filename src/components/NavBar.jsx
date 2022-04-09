@@ -18,7 +18,7 @@ function NavBar() {
         <AllLinks to='/'>Home </AllLinks> 
         <AllLinks to='/Register'>Register</AllLinks>
         <AllLinks to='/Employees'>Employees</AllLinks>
-        <AllLinks to='/LogIn'>{isAuth?"logout":"login"}Login</AllLinks>
+        <AllLinks to='/LogIn'>{isAuth?"logout":"login"}</AllLinks>
     </div>
   )
 }
