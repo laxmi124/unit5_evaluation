@@ -1,4 +1,5 @@
 import React,{useState,useContext} from 'react';
+import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import {AuthContext} from '../context/AuthContext';
 // import {useDispatch,useSelector} from 'react-redux';
@@ -9,7 +10,7 @@ import {AuthContext} from '../context/AuthContext';
 
 
 function LogIn() {
-    // const dispatch = useDispatch()
+    const dispatch = useDispatch()
      let {logIn,logOut,setToken} = useContext(AuthContext);
      const navigate = useNavigate();
 

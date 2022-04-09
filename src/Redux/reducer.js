@@ -1,7 +1,7 @@
 import {IS_LOGIN} from './action';
 import {SET_USER_DETAILS} from './action';
 
-export const reducer = (store={setUserDetails:'',isLogin:false},{payload,type}) => {
+export const reducer = (store={setUserDetails:{},isLogin:false},{payload,type}) => {
 
     switch(type){
         case IS_LOGIN:
